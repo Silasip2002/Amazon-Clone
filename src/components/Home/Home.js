@@ -21,37 +21,21 @@ function Home() {
         </div>
         <div className="home__row">
           <Product
-            id="12343"
+            id="1"
             title="Apple Macbook Pro 2020"
             price={11.96}
             rating={5}
             image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg "
           />
           <Product
-            id="12343"
+            id="2"
             title="Apple Macbook Pro 2020"
             price={11.96}
             rating={5}
             image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg "
           />
           <Product
-            id="12343"
-            title="Apple Macbook Pro 2020"
-            price={11.96}
-            rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg "
-          />
-        </div>
-        <div className="home__row">
-          <Product
-            id="12343"
-            title="Apple Macbook Pro 2020"
-            price={11.96}
-            rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg "
-          />
-          <Product
-            id="12343"
+            id="3"
             title="Apple Macbook Pro 2020"
             price={11.96}
             rating={5}
@@ -60,7 +44,23 @@ function Home() {
         </div>
         <div className="home__row">
           <Product
-            id="12343"
+            id="4"
+            title="Apple Macbook Pro 2020"
+            price={11.96}
+            rating={5}
+            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg "
+          />
+          <Product
+            id="5"
+            title="Apple Macbook Pro 2020"
+            price={11.96}
+            rating={5}
+            image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg "
+          />
+        </div>
+        <div className="home__row">
+          <Product
+            id="6"
             title="Apple Macbook Pro 2020"
             price={11.96}
             rating={5}

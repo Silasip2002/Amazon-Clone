@@ -3,8 +3,12 @@ import "../Header/Header.css";
 import logo from "../../image/logo.png";
 import SearchIcon from "@material-ui/icons/Search";
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
+import { useStateValue } from "../../StateProvider";
 
 function Header() {
+  const [{ basket }] = useStateValue();
+  console.log("check basket : " + basket);
+  console.log(basket);
   return (
     <div className="header">
       <img className="header__logo" src={logo} />
@@ -27,7 +31,9 @@ function Header() {
         </div>
         <div className="header__optionBasket">
           <AddShoppingCartIcon />
-          <span className="header__optionLineTwo header__basketCount">0</span>
+          <span className="header__optionLineTwo header__basketCount">
+            {basket?.length}
+          </span>
         </div>
       </div>
     </div>
