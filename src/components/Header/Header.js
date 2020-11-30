@@ -4,6 +4,7 @@ import logo from "../../image/logo.png";
 import SearchIcon from "@material-ui/icons/Search";
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import { useStateValue } from "../../StateProvider";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [{ basket }] = useStateValue();
@@ -11,7 +12,9 @@ function Header() {
   console.log(basket);
   return (
     <div className="header">
-      <img className="header__logo" src={logo} />
+      <Link to="/">
+        <img className="header__logo" src={logo} alt="" />
+      </Link>
       <div className="header__search">
         <input className="header__searchInput" type="text"></input>
         <SearchIcon className="header__searchIcon" />
