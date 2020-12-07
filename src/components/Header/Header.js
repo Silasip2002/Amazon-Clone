@@ -8,8 +8,6 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const [{ basket }] = useStateValue();
-  console.log("check basket : " + basket);
-  console.log(basket);
   return (
     <div className="header">
       <Link to="/">
@@ -33,7 +31,7 @@ function Header() {
           <span className="header__optionLineTwo">Prime</span>
         </div>
         <div className="header__optionBasket">
-          <AddShoppingCartIcon />
+          <AddShoppingCartIcon></AddShoppingCartIcon>
           <span className="header__optionLineTwo header__basketCount">
             {basket?.length}
           </span>
