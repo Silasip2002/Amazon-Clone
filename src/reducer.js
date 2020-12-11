@@ -1,32 +1,20 @@
 export const initialState = {
-  basket: [
-    {
-      id: "6",
-      title: "Apple Macbook Pro 2020",
-      price: 11.96,
-      rating: 5,
-      image:
-        "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg ",
-    },
-    {
-      id: "6",
-      title: "Apple Macbook Pro 2020",
-      price: 11.96,
-      rating: 5,
-      image:
-        "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg ",
-    },
-  ],
-  user: null,
+  basket: [],
+  user: "",
 };
 
 export const getBasketTotal = (basket) =>
   basket?.reduce((amount, item) => item.price + amount, 0);
 
 const reducer = (state, action) => {
-  console.log(action);
   // the actions come from dispatch function from the stateProvider.
   switch (action.type) {
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user,
+      };
+
     case "ADD_TO_BASKET":
       //Logic for adding items to basket
       return {
